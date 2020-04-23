@@ -19,17 +19,17 @@ $(function() {
   });
 
   //----------------------------------------fixed----------------------------------
-  $(window).scroll(function(){
-      if($(this).scrollTop()>500){
-          $('.nav').addClass('nav--active');
-      }
-      else if ($(this).scrollTop()<500){
-          $('.nav').removeClass('nav--active');
-      }
-  });
-  if($(this).scrollTop()>500){
-    $('.nav').addClass('nav--active');
-  }
+  // $(window).scroll(function(){
+  //     if($(this).scrollTop()>500){
+  //         $('.nav').addClass('nav--active');
+  //     }
+  //     else if ($(this).scrollTop()<500){
+  //         $('.nav').removeClass('nav--active');
+  //     }
+  // });
+  // if($(this).scrollTop()>500){
+  //   $('.nav').addClass('nav--active');
+  // }
 
 //------------------------------гамбургер-----------------------------
   $('.hamburger').click(function() {
