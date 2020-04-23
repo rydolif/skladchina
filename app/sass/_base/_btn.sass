@@ -3,15 +3,21 @@
 	display: flex
 	justify-content: center
 	align-items: center
+	background-color: $red
 	height: 45px
-	font-size: 18px
-	color: $accent
-	font-weight: 700
-	border-radius: 20px
+	padding: 0 60px
+	border-radius: 8px
 	max-width: fit-content
+	text-transform: uppercase
+	color: #fff
+	font-weight: 700
 
 	&:hover,
 	&:focus
-		border: 1px solid $accent
-		background: $accent
+		border: none
 		color: #fff
+
+	+r(480)
+		width: 100%
+		max-width: 100%
+		padding: 0

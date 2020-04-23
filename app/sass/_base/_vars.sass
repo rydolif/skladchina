@@ -4,11 +4,11 @@ $fonts: 'Roboto', sans-serif
 //---------------------end-fonts---------------------
 
 //----------------------color---------------------
-$accent: #4cddee
-$text: #353535
-$dark: #1e53a6
-$title: #f43ddb
-
+$accent: #537498
+$text: #313030
+$bg: #f7fafc
+$red: #e44652
+$green: #89ce4c
 //---------------------end-color---------------------
 
 body
@@ -16,14 +16,18 @@ body
 	position: relative
 	min-width: 320px
 	font-family: $fonts
-	font-size: 14px
+	font-size: 16px
 	color: $text
-	line-height: 1.4
+	line-height: 2
 	font-weight: 400
 	min-height: 100vh
 	display: flex
 	flex-direction: column
 	justify-content: space-between
+
+	+r(992)
+		line-height: 1.6
+		font-size: 14px
 
 ::selection
 	background-color: $accent
@@ -48,11 +52,14 @@ p
 	padding: 0
 
 a,
-button,
+button
+
+	transition: all .6s
+
 	&:focus,
 	&:hover,
 		outline: none
 		text-decoration: none
-		transition: all .6s
+		
 		border: none
 		outline: none
